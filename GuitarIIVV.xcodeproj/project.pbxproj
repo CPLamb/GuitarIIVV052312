@@ -1,0 +1,668 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		630365CB1543288500076E4C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 630365CA1543288500076E4C /* UIKit.framework */; };
+		630365CD1543288500076E4C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 630365CC1543288500076E4C /* Foundation.framework */; };
+		630365CF1543288500076E4C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 630365CE1543288500076E4C /* CoreGraphics.framework */; };
+		630365D51543288500076E4C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 630365D31543288500076E4C /* InfoPlist.strings */; };
+		630365D71543288500076E4C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 630365D61543288500076E4C /* main.m */; };
+		630365DB1543288500076E4C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 630365DA1543288500076E4C /* AppDelegate.m */; };
+		630365DE1543288500076E4C /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 630365DC1543288500076E4C /* MainStoryboard_iPhone.storyboard */; };
+		630365E11543288500076E4C /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 630365DF1543288500076E4C /* MainStoryboard_iPad.storyboard */; };
+		630365E41543288500076E4C /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 630365E31543288500076E4C /* FirstViewController.m */; };
+		630365E61543288500076E4C /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 630365E51543288500076E4C /* first.png */; };
+		630365E81543288500076E4C /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 630365E71543288500076E4C /* first@2x.png */; };
+		630365EB1543288500076E4C /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 630365EA1543288500076E4C /* SecondViewController.m */; };
+		630365ED1543288500076E4C /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 630365EC1543288500076E4C /* second.png */; };
+		630365EF1543288500076E4C /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 630365EE1543288500076E4C /* second@2x.png */; };
+		630365F71543288500076E4C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 630365F61543288500076E4C /* SenTestingKit.framework */; };
+		630365F81543288500076E4C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 630365CA1543288500076E4C /* UIKit.framework */; };
+		630365F91543288500076E4C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 630365CC1543288500076E4C /* Foundation.framework */; };
+		630366011543288500076E4C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 630365FF1543288500076E4C /* InfoPlist.strings */; };
+		630366041543288500076E4C /* GuitarIIVVTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 630366031543288500076E4C /* GuitarIIVVTests.m */; };
+		6303662115436C5200076E4C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6303662015436C5200076E4C /* QuartzCore.framework */; };
+		63AD31471544AFAD00CAF7B4 /* neck.png in Resources */ = {isa = PBXBuildFile; fileRef = 63AD31451544AFAD00CAF7B4 /* neck.png */; };
+		63AD31481544AFAD00CAF7B4 /* neck_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 63AD31461544AFAD00CAF7B4 /* neck_icon@2x.png */; };
+		63AD314A1544B08C00CAF7B4 /* neck_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 63AD31491544B08C00CAF7B4 /* neck_icon.png */; };
+		63AD314D1544B1EF00CAF7B4 /* iivv_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 63AD314B1544B1EF00CAF7B4 /* iivv_icon.png */; };
+		63AD314E1544B1EF00CAF7B4 /* iivv_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 63AD314C1544B1EF00CAF7B4 /* iivv_icon@2x.png */; };
+		6956515F155C406C00B1708D /* gutsChord.png in Resources */ = {isa = PBXBuildFile; fileRef = 6956515E155C406C00B1708D /* gutsChord.png */; };
+		69565167155C565E00B1708D /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69565166155C565E00B1708D /* SplashViewController.m */; };
+		6956516B155C581B00B1708D /* ChordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6956516A155C581B00B1708D /* ChordViewController.m */; };
+		6956516E155C583900B1708D /* MajorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6956516D155C583900B1708D /* MajorViewController.m */; };
+		69F7037315506C8600C54CD5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69F7037215506C8600C54CD5 /* AVFoundation.framework */; };
+		69F7037615506CAA00C54CD5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69F7037515506CAA00C54CD5 /* AudioToolbox.framework */; };
+		8317D9DA1555B84400047DFC /* 00StartSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8317D9D81555B84400047DFC /* 00StartSound.mp3 */; };
+		8317D9E11556C21400047DFC /* guts145.png in Resources */ = {isa = PBXBuildFile; fileRef = 8317D9E01556C21400047DFC /* guts145.png */; };
+		8317D9E91556F11500047DFC /* 07ChordF#.png in Resources */ = {isa = PBXBuildFile; fileRef = 8317D9E61556F11500047DFC /* 07ChordF#.png */; };
+		8317D9EA1556F11500047DFC /* 10ChordD#.png in Resources */ = {isa = PBXBuildFile; fileRef = 8317D9E71556F11500047DFC /* 10ChordD#.png */; };
+		8317D9EC15582B0D00047DFC /* frets.png in Resources */ = {isa = PBXBuildFile; fileRef = 8317D9EB15582B0D00047DFC /* frets.png */; };
+		8317D9F315586A7800047DFC /* 04ChordA.png in Resources */ = {isa = PBXBuildFile; fileRef = 8317D9F215586A7800047DFC /* 04ChordA.png */; };
+		8317D9F515586B6200047DFC /* 01ChordC.png in Resources */ = {isa = PBXBuildFile; fileRef = 8317D9F415586B6200047DFC /* 01ChordC.png */; };
+		8317D9FB15586CF100047DFC /* 01ChordC.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8317D9F615586CF000047DFC /* 01ChordC.mp3 */; };
+		8317D9FC15586CF100047DFC /* 02ChordG.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8317D9F715586CF000047DFC /* 02ChordG.mp3 */; };
+		8317D9FD15586CF100047DFC /* 03ChordD.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8317D9F815586CF000047DFC /* 03ChordD.mp3 */; };
+		8317D9FE15586CF100047DFC /* 04ChordA.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8317D9F915586CF000047DFC /* 04ChordA.mp3 */; };
+		8317D9FF15586CF100047DFC /* 05ChordE.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8317D9FA15586CF100047DFC /* 05ChordE.mp3 */; };
+		8317DA07155872A000047DFC /* 06ChordB.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8317DA001558729F00047DFC /* 06ChordB.mp3 */; };
+		8317DA08155872A000047DFC /* 07ChordF#.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8317DA011558729F00047DFC /* 07ChordF#.mp3 */; };
+		8317DA09155872A000047DFC /* 08ChordC#.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8317DA021558729F00047DFC /* 08ChordC#.mp3 */; };
+		8317DA0A155872A000047DFC /* 09CHordG#.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8317DA031558729F00047DFC /* 09CHordG#.mp3 */; };
+		8317DA0B155872A000047DFC /* 10ChordD#.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8317DA041558729F00047DFC /* 10ChordD#.mp3 */; };
+		8317DA0C155872A000047DFC /* 11ChordA#.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8317DA05155872A000047DFC /* 11ChordA#.mp3 */; };
+		8317DA0D155872A000047DFC /* 12ChordF.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8317DA06155872A000047DFC /* 12ChordF.mp3 */; };
+		832A91F315509054001C7A9E /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 832A91EF15509054001C7A9E /* Icon.png */; };
+		832A91F415509054001C7A9E /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 832A91F015509054001C7A9E /* Icon@2x.png */; };
+		832A91F515509054001C7A9E /* mask-old.png in Resources */ = {isa = PBXBuildFile; fileRef = 832A91F115509054001C7A9E /* mask-old.png */; };
+		832A91F615509054001C7A9E /* mask@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 832A91F215509054001C7A9E /* mask@2x.png */; };
+		8331C5FF155EE34F002E49C1 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8331C5FE155EE34F002E49C1 /* InfoViewController.m */; };
+		8331C602155EE4AA002E49C1 /* HelpChordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8331C601155EE4AA002E49C1 /* HelpChordViewController.m */; };
+		8331C605155EE4CC002E49C1 /* Help145ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8331C604155EE4CC002E49C1 /* Help145ViewController.m */; };
+		8331C608155EE4E6002E49C1 /* HelpMajorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8331C607155EE4E6002E49C1 /* HelpMajorViewController.m */; };
+		83437954156D1F96009E18A1 /* guitarNeck.png in Resources */ = {isa = PBXBuildFile; fileRef = 83437953156D1F96009E18A1 /* guitarNeck.png */; };
+		836F2D581562E49F00767CC3 /* mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 836F2D571562E49F00767CC3 /* mask.png */; };
+		83E38EB0156312EC00668B8B /* newmask.png in Resources */ = {isa = PBXBuildFile; fileRef = 83E38EAF156312EC00668B8B /* newmask.png */; };
+		83E38EB3156317BF00668B8B /* gutsMajor.png in Resources */ = {isa = PBXBuildFile; fileRef = 83E38EB2156317BF00668B8B /* gutsMajor.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		630365FA1543288500076E4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 630365BD1543288400076E4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 630365C51543288500076E4C;
+			remoteInfo = GuitarIIVV;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		630365C61543288500076E4C /* GuitarIIVV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuitarIIVV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		630365CA1543288500076E4C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		630365CC1543288500076E4C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		630365CE1543288500076E4C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		630365D21543288500076E4C /* GuitarIIVV-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GuitarIIVV-Info.plist"; sourceTree = "<group>"; };
+		630365D41543288500076E4C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		630365D61543288500076E4C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		630365D81543288500076E4C /* GuitarIIVV-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GuitarIIVV-Prefix.pch"; sourceTree = "<group>"; };
+		630365D91543288500076E4C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		630365DA1543288500076E4C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		630365DD1543288500076E4C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		630365E01543288500076E4C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		630365E21543288500076E4C /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		630365E31543288500076E4C /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		630365E51543288500076E4C /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		630365E71543288500076E4C /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		630365E91543288500076E4C /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		630365EA1543288500076E4C /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		630365EC1543288500076E4C /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		630365EE1543288500076E4C /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		630365F51543288500076E4C /* GuitarIIVVTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuitarIIVVTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		630365F61543288500076E4C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		630365FE1543288500076E4C /* GuitarIIVVTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GuitarIIVVTests-Info.plist"; sourceTree = "<group>"; };
+		630366001543288500076E4C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		630366021543288500076E4C /* GuitarIIVVTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GuitarIIVVTests.h; sourceTree = "<group>"; };
+		630366031543288500076E4C /* GuitarIIVVTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GuitarIIVVTests.m; sourceTree = "<group>"; };
+		6303662015436C5200076E4C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		63AD31451544AFAD00CAF7B4 /* neck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = neck.png; sourceTree = "<group>"; };
+		63AD31461544AFAD00CAF7B4 /* neck_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "neck_icon@2x.png"; sourceTree = "<group>"; };
+		63AD31491544B08C00CAF7B4 /* neck_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = neck_icon.png; sourceTree = "<group>"; };
+		63AD314B1544B1EF00CAF7B4 /* iivv_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iivv_icon.png; sourceTree = "<group>"; };
+		63AD314C1544B1EF00CAF7B4 /* iivv_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iivv_icon@2x.png"; sourceTree = "<group>"; };
+		6956515E155C406C00B1708D /* gutsChord.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gutsChord.png; sourceTree = "<group>"; };
+		69565165155C565E00B1708D /* SplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
+		69565166155C565E00B1708D /* SplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
+		69565169155C581B00B1708D /* ChordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChordViewController.h; sourceTree = "<group>"; };
+		6956516A155C581B00B1708D /* ChordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChordViewController.m; sourceTree = "<group>"; };
+		6956516C155C583900B1708D /* MajorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MajorViewController.h; sourceTree = "<group>"; };
+		6956516D155C583900B1708D /* MajorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MajorViewController.m; sourceTree = "<group>"; };
+		69F7037215506C8600C54CD5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		69F7037515506CAA00C54CD5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		8317D9D81555B84400047DFC /* 00StartSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 00StartSound.mp3; sourceTree = "<group>"; };
+		8317D9E01556C21400047DFC /* guts145.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guts145.png; sourceTree = "<group>"; };
+		8317D9E61556F11500047DFC /* 07ChordF#.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "07ChordF#.png"; sourceTree = "<group>"; };
+		8317D9E71556F11500047DFC /* 10ChordD#.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "10ChordD#.png"; sourceTree = "<group>"; };
+		8317D9EB15582B0D00047DFC /* frets.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frets.png; sourceTree = "<group>"; };
+		8317D9F215586A7800047DFC /* 04ChordA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 04ChordA.png; sourceTree = "<group>"; };
+		8317D9F415586B6200047DFC /* 01ChordC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 01ChordC.png; sourceTree = "<group>"; };
+		8317D9F615586CF000047DFC /* 01ChordC.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 01ChordC.mp3; sourceTree = "<group>"; };
+		8317D9F715586CF000047DFC /* 02ChordG.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 02ChordG.mp3; sourceTree = "<group>"; };
+		8317D9F815586CF000047DFC /* 03ChordD.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 03ChordD.mp3; sourceTree = "<group>"; };
+		8317D9F915586CF000047DFC /* 04ChordA.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 04ChordA.mp3; sourceTree = "<group>"; };
+		8317D9FA15586CF100047DFC /* 05ChordE.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 05ChordE.mp3; sourceTree = "<group>"; };
+		8317DA001558729F00047DFC /* 06ChordB.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 06ChordB.mp3; sourceTree = "<group>"; };
+		8317DA011558729F00047DFC /* 07ChordF#.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "07ChordF#.mp3"; sourceTree = "<group>"; };
+		8317DA021558729F00047DFC /* 08ChordC#.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "08ChordC#.mp3"; sourceTree = "<group>"; };
+		8317DA031558729F00047DFC /* 09CHordG#.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "09CHordG#.mp3"; sourceTree = "<group>"; };
+		8317DA041558729F00047DFC /* 10ChordD#.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "10ChordD#.mp3"; sourceTree = "<group>"; };
+		8317DA05155872A000047DFC /* 11ChordA#.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "11ChordA#.mp3"; sourceTree = "<group>"; };
+		8317DA06155872A000047DFC /* 12ChordF.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 12ChordF.mp3; sourceTree = "<group>"; };
+		832A91EF15509054001C7A9E /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		832A91F015509054001C7A9E /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		832A91F115509054001C7A9E /* mask-old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mask-old.png"; sourceTree = "<group>"; };
+		832A91F215509054001C7A9E /* mask@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mask@2x.png"; sourceTree = "<group>"; };
+		8331C5FD155EE34F002E49C1 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		8331C5FE155EE34F002E49C1 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		8331C600155EE4AA002E49C1 /* HelpChordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpChordViewController.h; sourceTree = "<group>"; };
+		8331C601155EE4AA002E49C1 /* HelpChordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpChordViewController.m; sourceTree = "<group>"; };
+		8331C603155EE4CC002E49C1 /* Help145ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Help145ViewController.h; sourceTree = "<group>"; };
+		8331C604155EE4CC002E49C1 /* Help145ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Help145ViewController.m; sourceTree = "<group>"; };
+		8331C606155EE4E6002E49C1 /* HelpMajorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpMajorViewController.h; sourceTree = "<group>"; };
+		8331C607155EE4E6002E49C1 /* HelpMajorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpMajorViewController.m; sourceTree = "<group>"; };
+		83437953156D1F96009E18A1 /* guitarNeck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guitarNeck.png; sourceTree = "<group>"; };
+		836F2D571562E49F00767CC3 /* mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mask.png; sourceTree = "<group>"; };
+		83E38EAF156312EC00668B8B /* newmask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newmask.png; sourceTree = "<group>"; };
+		83E38EB2156317BF00668B8B /* gutsMajor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gutsMajor.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		630365C31543288500076E4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69F7037615506CAA00C54CD5 /* AudioToolbox.framework in Frameworks */,
+				69F7037315506C8600C54CD5 /* AVFoundation.framework in Frameworks */,
+				6303662115436C5200076E4C /* QuartzCore.framework in Frameworks */,
+				630365CB1543288500076E4C /* UIKit.framework in Frameworks */,
+				630365CD1543288500076E4C /* Foundation.framework in Frameworks */,
+				630365CF1543288500076E4C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		630365F11543288500076E4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				630365F71543288500076E4C /* SenTestingKit.framework in Frameworks */,
+				630365F81543288500076E4C /* UIKit.framework in Frameworks */,
+				630365F91543288500076E4C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		630365BB1543288400076E4C = {
+			isa = PBXGroup;
+			children = (
+				630365D01543288500076E4C /* GuitarIIVV */,
+				630365FC1543288500076E4C /* GuitarIIVVTests */,
+				630365C91543288500076E4C /* Frameworks */,
+				630365C71543288500076E4C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		630365C71543288500076E4C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				630365C61543288500076E4C /* GuitarIIVV.app */,
+				630365F51543288500076E4C /* GuitarIIVVTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		630365C91543288500076E4C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				69F7037515506CAA00C54CD5 /* AudioToolbox.framework */,
+				69F7037215506C8600C54CD5 /* AVFoundation.framework */,
+				6303662015436C5200076E4C /* QuartzCore.framework */,
+				630365CA1543288500076E4C /* UIKit.framework */,
+				630365CC1543288500076E4C /* Foundation.framework */,
+				630365CE1543288500076E4C /* CoreGraphics.framework */,
+				630365F61543288500076E4C /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		630365D01543288500076E4C /* GuitarIIVV */ = {
+			isa = PBXGroup;
+			children = (
+				630365D91543288500076E4C /* AppDelegate.h */,
+				630365DA1543288500076E4C /* AppDelegate.m */,
+				630365DC1543288500076E4C /* MainStoryboard_iPhone.storyboard */,
+				69565165155C565E00B1708D /* SplashViewController.h */,
+				69565166155C565E00B1708D /* SplashViewController.m */,
+				69565169155C581B00B1708D /* ChordViewController.h */,
+				6956516A155C581B00B1708D /* ChordViewController.m */,
+				630365E21543288500076E4C /* FirstViewController.h */,
+				630365E31543288500076E4C /* FirstViewController.m */,
+				6956516C155C583900B1708D /* MajorViewController.h */,
+				6956516D155C583900B1708D /* MajorViewController.m */,
+				630365E91543288500076E4C /* SecondViewController.h */,
+				630365EA1543288500076E4C /* SecondViewController.m */,
+				8331C5FD155EE34F002E49C1 /* InfoViewController.h */,
+				8331C5FE155EE34F002E49C1 /* InfoViewController.m */,
+				630365DF1543288500076E4C /* MainStoryboard_iPad.storyboard */,
+				8331C600155EE4AA002E49C1 /* HelpChordViewController.h */,
+				8331C601155EE4AA002E49C1 /* HelpChordViewController.m */,
+				8331C603155EE4CC002E49C1 /* Help145ViewController.h */,
+				8331C604155EE4CC002E49C1 /* Help145ViewController.m */,
+				8331C606155EE4E6002E49C1 /* HelpMajorViewController.h */,
+				8331C607155EE4E6002E49C1 /* HelpMajorViewController.m */,
+				630365D11543288500076E4C /* Supporting Files */,
+			);
+			path = GuitarIIVV;
+			sourceTree = "<group>";
+		};
+		630365D11543288500076E4C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8317D9F615586CF000047DFC /* 01ChordC.mp3 */,
+				8317D9F715586CF000047DFC /* 02ChordG.mp3 */,
+				8317D9F815586CF000047DFC /* 03ChordD.mp3 */,
+				8317D9F915586CF000047DFC /* 04ChordA.mp3 */,
+				8317D9FA15586CF100047DFC /* 05ChordE.mp3 */,
+				8317DA001558729F00047DFC /* 06ChordB.mp3 */,
+				8317DA011558729F00047DFC /* 07ChordF#.mp3 */,
+				8317DA021558729F00047DFC /* 08ChordC#.mp3 */,
+				8317DA031558729F00047DFC /* 09CHordG#.mp3 */,
+				8317DA041558729F00047DFC /* 10ChordD#.mp3 */,
+				8317DA05155872A000047DFC /* 11ChordA#.mp3 */,
+				8317DA06155872A000047DFC /* 12ChordF.mp3 */,
+				8317D9D81555B84400047DFC /* 00StartSound.mp3 */,
+				8317D9F415586B6200047DFC /* 01ChordC.png */,
+				8317D9F215586A7800047DFC /* 04ChordA.png */,
+				8317D9E61556F11500047DFC /* 07ChordF#.png */,
+				8317D9E71556F11500047DFC /* 10ChordD#.png */,
+				630365E51543288500076E4C /* first.png */,
+				630365E71543288500076E4C /* first@2x.png */,
+				630365EC1543288500076E4C /* second.png */,
+				630365EE1543288500076E4C /* second@2x.png */,
+				832A91EF15509054001C7A9E /* Icon.png */,
+				832A91F015509054001C7A9E /* Icon@2x.png */,
+				83437953156D1F96009E18A1 /* guitarNeck.png */,
+				83E38EAF156312EC00668B8B /* newmask.png */,
+				836F2D571562E49F00767CC3 /* mask.png */,
+				832A91F115509054001C7A9E /* mask-old.png */,
+				832A91F215509054001C7A9E /* mask@2x.png */,
+				63AD314B1544B1EF00CAF7B4 /* iivv_icon.png */,
+				63AD314C1544B1EF00CAF7B4 /* iivv_icon@2x.png */,
+				63AD31491544B08C00CAF7B4 /* neck_icon.png */,
+				8317D9EB15582B0D00047DFC /* frets.png */,
+				63AD31451544AFAD00CAF7B4 /* neck.png */,
+				63AD31461544AFAD00CAF7B4 /* neck_icon@2x.png */,
+				8317D9E01556C21400047DFC /* guts145.png */,
+				83E38EB2156317BF00668B8B /* gutsMajor.png */,
+				6956515E155C406C00B1708D /* gutsChord.png */,
+				630365D21543288500076E4C /* GuitarIIVV-Info.plist */,
+				630365D31543288500076E4C /* InfoPlist.strings */,
+				630365D61543288500076E4C /* main.m */,
+				630365D81543288500076E4C /* GuitarIIVV-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		630365FC1543288500076E4C /* GuitarIIVVTests */ = {
+			isa = PBXGroup;
+			children = (
+				630366021543288500076E4C /* GuitarIIVVTests.h */,
+				630366031543288500076E4C /* GuitarIIVVTests.m */,
+				630365FD1543288500076E4C /* Supporting Files */,
+			);
+			path = GuitarIIVVTests;
+			sourceTree = "<group>";
+		};
+		630365FD1543288500076E4C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				630365FE1543288500076E4C /* GuitarIIVVTests-Info.plist */,
+				630365FF1543288500076E4C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		630365C51543288500076E4C /* GuitarIIVV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 630366071543288500076E4C /* Build configuration list for PBXNativeTarget "GuitarIIVV" */;
+			buildPhases = (
+				630365C21543288500076E4C /* Sources */,
+				630365C31543288500076E4C /* Frameworks */,
+				630365C41543288500076E4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GuitarIIVV;
+			productName = GuitarIIVV;
+			productReference = 630365C61543288500076E4C /* GuitarIIVV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		630365F41543288500076E4C /* GuitarIIVVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6303660A1543288500076E4C /* Build configuration list for PBXNativeTarget "GuitarIIVVTests" */;
+			buildPhases = (
+				630365F01543288500076E4C /* Sources */,
+				630365F11543288500076E4C /* Frameworks */,
+				630365F21543288500076E4C /* Resources */,
+				630365F31543288500076E4C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				630365FB1543288500076E4C /* PBXTargetDependency */,
+			);
+			name = GuitarIIVVTests;
+			productName = GuitarIIVVTests;
+			productReference = 630365F51543288500076E4C /* GuitarIIVVTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		630365BD1543288400076E4C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 630365C01543288400076E4C /* Build configuration list for PBXProject "GuitarIIVV" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 630365BB1543288400076E4C;
+			productRefGroup = 630365C71543288500076E4C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				630365C51543288500076E4C /* GuitarIIVV */,
+				630365F41543288500076E4C /* GuitarIIVVTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		630365C41543288500076E4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				630365D51543288500076E4C /* InfoPlist.strings in Resources */,
+				630365DE1543288500076E4C /* MainStoryboard_iPhone.storyboard in Resources */,
+				630365E11543288500076E4C /* MainStoryboard_iPad.storyboard in Resources */,
+				630365E61543288500076E4C /* first.png in Resources */,
+				630365E81543288500076E4C /* first@2x.png in Resources */,
+				630365ED1543288500076E4C /* second.png in Resources */,
+				630365EF1543288500076E4C /* second@2x.png in Resources */,
+				63AD31471544AFAD00CAF7B4 /* neck.png in Resources */,
+				63AD31481544AFAD00CAF7B4 /* neck_icon@2x.png in Resources */,
+				63AD314A1544B08C00CAF7B4 /* neck_icon.png in Resources */,
+				63AD314D1544B1EF00CAF7B4 /* iivv_icon.png in Resources */,
+				63AD314E1544B1EF00CAF7B4 /* iivv_icon@2x.png in Resources */,
+				832A91F315509054001C7A9E /* Icon.png in Resources */,
+				832A91F415509054001C7A9E /* Icon@2x.png in Resources */,
+				832A91F515509054001C7A9E /* mask-old.png in Resources */,
+				832A91F615509054001C7A9E /* mask@2x.png in Resources */,
+				8317D9DA1555B84400047DFC /* 00StartSound.mp3 in Resources */,
+				8317D9E11556C21400047DFC /* guts145.png in Resources */,
+				8317D9E91556F11500047DFC /* 07ChordF#.png in Resources */,
+				8317D9EA1556F11500047DFC /* 10ChordD#.png in Resources */,
+				8317D9EC15582B0D00047DFC /* frets.png in Resources */,
+				8317D9F315586A7800047DFC /* 04ChordA.png in Resources */,
+				8317D9F515586B6200047DFC /* 01ChordC.png in Resources */,
+				8317D9FB15586CF100047DFC /* 01ChordC.mp3 in Resources */,
+				8317D9FC15586CF100047DFC /* 02ChordG.mp3 in Resources */,
+				8317D9FD15586CF100047DFC /* 03ChordD.mp3 in Resources */,
+				8317D9FE15586CF100047DFC /* 04ChordA.mp3 in Resources */,
+				8317D9FF15586CF100047DFC /* 05ChordE.mp3 in Resources */,
+				8317DA07155872A000047DFC /* 06ChordB.mp3 in Resources */,
+				8317DA08155872A000047DFC /* 07ChordF#.mp3 in Resources */,
+				8317DA09155872A000047DFC /* 08ChordC#.mp3 in Resources */,
+				8317DA0A155872A000047DFC /* 09CHordG#.mp3 in Resources */,
+				8317DA0B155872A000047DFC /* 10ChordD#.mp3 in Resources */,
+				8317DA0C155872A000047DFC /* 11ChordA#.mp3 in Resources */,
+				8317DA0D155872A000047DFC /* 12ChordF.mp3 in Resources */,
+				6956515F155C406C00B1708D /* gutsChord.png in Resources */,
+				836F2D581562E49F00767CC3 /* mask.png in Resources */,
+				83E38EB0156312EC00668B8B /* newmask.png in Resources */,
+				83E38EB3156317BF00668B8B /* gutsMajor.png in Resources */,
+				83437954156D1F96009E18A1 /* guitarNeck.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		630365F21543288500076E4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				630366011543288500076E4C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		630365F31543288500076E4C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		630365C21543288500076E4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				630365D71543288500076E4C /* main.m in Sources */,
+				630365DB1543288500076E4C /* AppDelegate.m in Sources */,
+				630365E41543288500076E4C /* FirstViewController.m in Sources */,
+				630365EB1543288500076E4C /* SecondViewController.m in Sources */,
+				69565167155C565E00B1708D /* SplashViewController.m in Sources */,
+				6956516B155C581B00B1708D /* ChordViewController.m in Sources */,
+				6956516E155C583900B1708D /* MajorViewController.m in Sources */,
+				8331C5FF155EE34F002E49C1 /* InfoViewController.m in Sources */,
+				8331C602155EE4AA002E49C1 /* HelpChordViewController.m in Sources */,
+				8331C605155EE4CC002E49C1 /* Help145ViewController.m in Sources */,
+				8331C608155EE4E6002E49C1 /* HelpMajorViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		630365F01543288500076E4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				630366041543288500076E4C /* GuitarIIVVTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		630365FB1543288500076E4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 630365C51543288500076E4C /* GuitarIIVV */;
+			targetProxy = 630365FA1543288500076E4C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		630365D31543288500076E4C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				630365D41543288500076E4C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		630365DC1543288500076E4C /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				630365DD1543288500076E4C /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		630365DF1543288500076E4C /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				630365E01543288500076E4C /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		630365FF1543288500076E4C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				630366001543288500076E4C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		630366051543288500076E4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		630366061543288500076E4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		630366081543288500076E4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GuitarIIVV/GuitarIIVV-Prefix.pch";
+				INFOPLIST_FILE = "GuitarIIVV/GuitarIIVV-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		630366091543288500076E4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GuitarIIVV/GuitarIIVV-Prefix.pch";
+				INFOPLIST_FILE = "GuitarIIVV/GuitarIIVV-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6303660B1543288500076E4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GuitarIIVV.app/GuitarIIVV";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GuitarIIVV/GuitarIIVV-Prefix.pch";
+				INFOPLIST_FILE = "GuitarIIVVTests/GuitarIIVVTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		6303660C1543288500076E4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GuitarIIVV.app/GuitarIIVV";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GuitarIIVV/GuitarIIVV-Prefix.pch";
+				INFOPLIST_FILE = "GuitarIIVVTests/GuitarIIVVTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		630365C01543288400076E4C /* Build configuration list for PBXProject "GuitarIIVV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				630366051543288500076E4C /* Debug */,
+				630366061543288500076E4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		630366071543288500076E4C /* Build configuration list for PBXNativeTarget "GuitarIIVV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				630366081543288500076E4C /* Debug */,
+				630366091543288500076E4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6303660A1543288500076E4C /* Build configuration list for PBXNativeTarget "GuitarIIVVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6303660B1543288500076E4C /* Debug */,
+				6303660C1543288500076E4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 630365BD1543288400076E4C /* Project object */;
+}

@@ -1,0 +1,915 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="g5w-w5-nPc">
+    <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--First View Controller - First-->
+        <scene sceneID="11">
+            <objects>
+                <viewController title="First" id="2" customClass="FirstViewController" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" contentMode="center" id="R21-Ca-Xz7">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view autoresizesSubviews="NO" contentMode="center" id="5Oq-bO-Cak">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="guts145.png" id="tcE-3K-MVe">
+                                        <rect key="frame" x="-58" y="40" width="600" height="600"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="mask-old.png" id="Bsq-7j-ome">
+                                        <rect key="frame" x="0.0" y="-20" width="480" height="320"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" alpha="0.050000000000000003" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Gkn-D3-9yQ">
+                                        <rect key="frame" x="64" y="94" width="114" height="92"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="leftChordButton:" destination="2" eventType="touchUpInside" id="hvW-KQ-6HY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" alpha="0.050000000000000003" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" id="zCJ-xR-iZF">
+                                        <rect key="frame" x="186" y="51" width="114" height="92"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="middleChordButton:" destination="2" eventType="touchDown" id="Rky-nu-PbE"/>
+                                            <action selector="middleChordStopButton:" destination="2" eventType="touchUpInside" id="OgU-aC-1wM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" alpha="0.050000000000000003" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" id="oBH-j6-CfS">
+                                        <rect key="frame" x="203" y="185" width="80" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="playChordProgressionButton:" destination="2" eventType="touchUpInside" id="a7v-eT-kVp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" alpha="0.050000000000000003" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="BzI-Nb-SST">
+                                        <rect key="frame" x="308" y="80" width="114" height="118"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="rightChordButton:" destination="2" eventType="touchDown" id="v2i-bo-p9C"/>
+                                            <action selector="rightChordStopButton:" destination="2" eventType="touchUpInside" id="d6P-ws-YLe"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" text="V" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="1in-gU-tmj">
+                                        <rect key="frame" x="67" y="51" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="15"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" text="IV" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="AyW-gM-yRW">
+                                        <rect key="frame" x="377" y="51" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="15"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="first.png" id="eex-W8-O8O">
+                                        <rect key="frame" x="385" y="49" width="25" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="first.png" id="yea-WA-uVe">
+                                        <rect key="frame" x="76" y="49" width="25" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="wny-cb-DC4">
+                                        <rect key="frame" x="20" y="220" width="20" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="IrI-hr-PF4">
+                                        <rect key="frame" x="40" y="220" width="20" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="6EX-IY-H7F">
+                                        <rect key="frame" x="60" y="220" width="20" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="LHd-OR-Bfe">
+                                        <rect key="frame" x="80" y="220" width="20" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="7Ek-m0-702">
+                                        <rect key="frame" x="111" y="220" width="20" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="zAa-kb-lrK">
+                                        <rect key="frame" x="131" y="220" width="20" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="F5j-wY-ja9">
+                                        <rect key="frame" x="151" y="220" width="20" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="Yyn-8g-w1v">
+                                        <rect key="frame" x="171" y="220" width="20" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" id="qiZ-dV-coB">
+                                        <rect key="frame" x="0.0" y="256" width="480" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                        <items>
+                                            <barButtonItem title="Tutor" id="NPR-Zv-yBh">
+                                                <connections>
+                                                    <segue destination="3" kind="modal" modalTransitionStyle="crossDissolve" id="Jkt-Ax-5cQ"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem title="Help" id="CCW-ls-Cm0">
+                                                <connections>
+                                                    <segue destination="FkH-3G-yUP" kind="modal" modalTransitionStyle="crossDissolve" id="VLD-zW-zM7"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem title="Chord" id="khd-zG-Luh">
+                                                <connections>
+                                                    <segue destination="XkW-GJ-1YP" kind="modal" modalTransitionStyle="crossDissolve" id="pSL-cS-Ria"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem title="Major" id="lGX-NV-Th6">
+                                                <connections>
+                                                    <segue destination="ux8-11-mor" kind="modal" modalTransitionStyle="crossDissolve" id="HCJ-Ja-H7T"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem title="Info" id="GY3-jc-Lfq">
+                                                <connections>
+                                                    <segue destination="JN5-eq-nlk" kind="modal" modalTransitionStyle="crossDissolve" id="IBD-IH-wlm"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem width="33" style="plain" systemItem="fixedSpace" id="BPX-U7-Vxx"/>
+                                            <barButtonItem title="Rec" id="qRw-ql-SnW">
+                                                <connections>
+                                                    <action selector="recordChordsButton:" destination="2" id="Wg4-5J-Or6"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem systemItem="play" id="fGN-xE-RKo">
+                                                <connections>
+                                                    <action selector="playChordsButton:" destination="2" id="NBF-87-NDH"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem systemItem="trash" id="dpa-2R-drc">
+                                                <connections>
+                                                    <action selector="clearButton:" destination="2" id="pqh-SL-gUI"/>
+                                                </connections>
+                                            </barButtonItem>
+                                        </items>
+                                    </toolbar>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" text="I" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="m4M-NJ-xkP">
+                                <rect key="frame" x="219" y="5" width="42" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="first.png" id="CJ0-rU-t8o">
+                                <rect key="frame" x="228" y="5" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="chart" destination="tcE-3K-MVe" id="oKJ-QX-9K5"/>
+                        <outlet property="chartView" destination="5Oq-bO-Cak" id="rg3-4a-NFx"/>
+                        <outlet property="i" destination="m4M-NJ-xkP" id="Yjd-Ga-lwL"/>
+                        <outlet property="iv" destination="AyW-gM-yRW" id="osB-VR-inD"/>
+                        <outlet property="leftChordView" destination="yea-WA-uVe" id="pgh-Jg-R0c"/>
+                        <outlet property="m1Beat1" destination="wny-cb-DC4" id="h58-4H-RHi"/>
+                        <outlet property="m1Beat2" destination="IrI-hr-PF4" id="kAh-4n-jaj"/>
+                        <outlet property="m1Beat3" destination="6EX-IY-H7F" id="lbs-Tn-7Re"/>
+                        <outlet property="m1Beat4" destination="LHd-OR-Bfe" id="3sr-i4-Ohw"/>
+                        <outlet property="m2Beat1" destination="7Ek-m0-702" id="7Ws-SY-cYA"/>
+                        <outlet property="m2Beat2" destination="zAa-kb-lrK" id="Prb-tZ-UEE"/>
+                        <outlet property="m2Beat3" destination="F5j-wY-ja9" id="fQA-UI-hdl"/>
+                        <outlet property="m2Beat4" destination="Yyn-8g-w1v" id="elJ-Ab-Q2t"/>
+                        <outlet property="middleChordView" destination="CJ0-rU-t8o" id="YwB-H7-XAR"/>
+                        <outlet property="rightChordView" destination="eex-W8-O8O" id="ASA-4k-L0s"/>
+                        <outlet property="v" destination="1in-gU-tmj" id="iLF-Yf-T7M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3" y="-172"/>
+        </scene>
+        <!--Major View Controller - Major-->
+        <scene sceneID="eBZ-iZ-TB4">
+            <objects>
+                <viewController id="ux8-11-mor" customClass="MajorViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iS4-ya-MNw">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="gutsMajor.png" id="ryC-2b-hFd">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="newmask.png" id="RpV-av-z74">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Xy6-Fm-O41">
+                                <rect key="frame" x="115" y="81" width="78" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Left">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="leftChordButton:" destination="ux8-11-mor" eventType="touchUpInside" id="zaH-DV-jm3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fkf-F9-1TB">
+                                <rect key="frame" x="201" y="81" width="78" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Middle">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="middleChordButton:" destination="ux8-11-mor" eventType="touchUpInside" id="cJO-Bm-OIg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dbj-BO-yVD">
+                                <rect key="frame" x="287" y="81" width="78" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Right">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="rightChordButton:" destination="ux8-11-mor" eventType="touchUpInside" id="yCt-az-KX7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Guitar Major Chord" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="wSu-4S-jB1">
+                                <rect key="frame" x="129" y="20" width="223" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" id="k27-4S-1Ta">
+                                <rect key="frame" x="0.0" y="276" width="480" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="8c7-hM-gXl"/>
+                                    <barButtonItem title="Help" id="dM7-rU-9Kf">
+                                        <connections>
+                                            <segue destination="aRd-jn-yzK" kind="modal" modalTransitionStyle="crossDissolve" id="tjW-l9-7kT"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Chord" id="gBK-Qx-E3t">
+                                        <connections>
+                                            <segue destination="XkW-GJ-1YP" kind="modal" modalTransitionStyle="crossDissolve" id="QOX-Ib-ndt"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="I-IV-V" id="XjX-C9-Utg">
+                                        <connections>
+                                            <segue destination="2" kind="modal" modalTransitionStyle="crossDissolve" id="fZs-Oe-TKh"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Info" id="Bj3-Dh-iM4">
+                                        <connections>
+                                            <segue destination="JN5-eq-nlk" kind="modal" modalTransitionStyle="crossDissolve" id="kVv-yD-D4a"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Pnb-6g-2Al"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Major" image="second.png" id="2VK-wO-Vy8"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kWW-Rt-LNZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3" y="315"/>
+        </scene>
+        <!--Info View Controller - Info-->
+        <scene sceneID="huk-I6-WBt">
+            <objects>
+                <viewController id="JN5-eq-nlk" customClass="InfoViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KaY-2Y-qxn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Wormhole Info" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="QeM-OM-bDK">
+                                <rect key="frame" x="47" y="20" width="227" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" id="8MF-aJ-LP4">
+                                <rect key="frame" x="0.0" y="436" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="CVp-kV-DNO"/>
+                                    <barButtonItem title="Tutor" id="9KL-WU-37s">
+                                        <connections>
+                                            <segue destination="3" kind="modal" modalTransitionStyle="flipHorizontal" id="Yeq-Ag-kE2"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Chord" id="GsQ-lr-lIa">
+                                        <connections>
+                                            <segue destination="XkW-GJ-1YP" kind="modal" modalTransitionStyle="crossDissolve" id="pcK-Vh-HQH"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="I-IV-V" id="VI1-D1-00j">
+                                        <connections>
+                                            <segue destination="2" kind="modal" modalTransitionStyle="crossDissolve" id="c7I-vM-gfs"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Major" id="ZHe-cx-O0g">
+                                        <connections>
+                                            <segue destination="ux8-11-mor" kind="modal" modalTransitionStyle="crossDissolve" id="7cb-JM-Aiy"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="qbS-Yv-0Zg"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Info" image="first.png" id="AzX-KU-Hyg"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7RP-fT-R9j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-474" y="-764"/>
+        </scene>
+        <!--Second View Controller - Second-->
+        <scene sceneID="13">
+            <objects>
+                <viewController title="Second" id="3" customClass="SecondViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFit" id="17">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="guitarNeck.png" id="LBU-M8-0Xj">
+                                <rect key="frame" x="-20" y="105" width="350" height="325"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="ruH-B5-Hle">
+                                <rect key="frame" x="61" y="0.0" width="55" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetAction:" destination="3" eventType="touchUpInside" id="Kcq-nP-d9g"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" id="ioV-iY-O75">
+                                <rect key="frame" x="7" y="0.0" width="55" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Mark">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="highlightFingers:" destination="3" eventType="touchUpInside" id="ojG-zO-jls"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5e2-yV-PPd">
+                                <rect key="frame" x="293" y="128" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="1          ">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="finger1Pressed:" destination="3" eventType="touchDown" id="TxT-HL-RwL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NTx-9H-XJi">
+                                <rect key="frame" x="293" y="202" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="2        ">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="finger2Pressed:" destination="3" eventType="touchDown" id="SjB-nf-biW"/>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="RXF-RF-G4h">
+                                <rect key="frame" x="293" y="340" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="4        ">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="finger4Pressed:" destination="3" eventType="touchDown" id="mNH-aj-yfj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="i7k-7W-3c2">
+                                <rect key="frame" x="293" y="271" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="3        ">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="finger3Pressed:" destination="3" eventType="touchDown" id="jP7-J3-UGL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="d1Q-1N-ebe">
+                                <rect key="frame" x="115" y="0.0" width="55" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playChordsButton:" destination="3" eventType="touchUpInside" id="D0j-FB-m2P"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qNT-of-yza">
+                                <rect key="frame" x="169" y="0.0" width="55" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Scale">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="scaleFingers:" destination="3" eventType="touchUpInside" id="ASt-8j-3UO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ug8-xC-Yw1">
+                                <rect key="frame" x="20" y="42" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="C ">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="moveToC:" destination="3" eventType="touchUpInside" id="fU5-aN-eBi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vxR-bd-cU0">
+                                <rect key="frame" x="68" y="42" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="G ">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="moveToG:" destination="3" eventType="touchUpInside" id="MyX-xI-QTE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="L3N-Hp-n8Y">
+                                <rect key="frame" x="116" y="42" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="D">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="moveToD:" destination="3" eventType="touchUpInside" id="zT1-80-AuW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7Bf-Ax-88p">
+                                <rect key="frame" x="164" y="42" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="A">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="moveToA:" destination="3" eventType="touchUpInside" id="zgS-jc-lgV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="D44-8S-2Cr">
+                                <rect key="frame" x="212" y="42" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="E">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="moveToE:" destination="3" eventType="touchUpInside" id="l6r-vO-Fb2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hrc-fr-bRM">
+                                <rect key="frame" x="260" y="42" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="B ">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="moveToB:" destination="3" eventType="touchUpInside" id="xrX-fP-3R4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WUW-Pc-CtO">
+                                <rect key="frame" x="20" y="81" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="F#">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="moveToFSharp:" destination="3" eventType="touchUpInside" id="jUp-Df-eJ0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aOH-7R-r2v">
+                                <rect key="frame" x="68" y="81" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="C#">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="moveToCSharp:" destination="3" eventType="touchUpInside" id="5sL-Lh-Xse"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vBz-Ie-BSB">
+                                <rect key="frame" x="116" y="81" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="G#">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="moveToGSharp:" destination="3" eventType="touchUpInside" id="9qc-KC-QYN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eGZ-9T-sr0">
+                                <rect key="frame" x="164" y="81" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="D#">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="moveToDSharp:" destination="3" eventType="touchUpInside" id="cig-HU-XFs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="W7N-S4-RS6">
+                                <rect key="frame" x="212" y="81" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="A#">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="moveToASharp:" destination="3" eventType="touchUpInside" id="MFU-wj-mEr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="m4K-8n-EmG">
+                                <rect key="frame" x="260" y="81" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="F">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="moveToF:" destination="3" eventType="touchUpInside" id="qPj-8f-pzn"/>
+                                </connections>
+                            </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" id="3MD-QN-uBS">
+                                <rect key="frame" x="0.0" y="439" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="UTV-HO-YJS"/>
+                                    <barButtonItem title="Back" id="KuF-r2-grI">
+                                        <connections>
+                                            <segue destination="JN5-eq-nlk" kind="modal" modalTransitionStyle="crossDissolve" id="pcd-HK-dSg"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="I-IV-V" id="XnM-OD-lmY">
+                                        <connections>
+                                            <segue destination="2" kind="modal" modalTransitionStyle="crossDissolve" id="rlo-oN-ahF"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="zWn-Sq-NX7"/>
+                                </items>
+                            </toolbar>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="tae-N7-hZG">
+                                <rect key="frame" x="232" y="1" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="tutorSwitcher:" destination="3" eventType="valueChanged" id="I72-0A-ASN"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Tutor" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="PnM-Ey-15N">
+                                <rect key="frame" x="248" y="25" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Guitar Neck with Notes" image="neck_icon.png" id="6"/>
+                    <navigationItem key="navigationItem" id="UKh-fi-RHz"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="finger1" destination="5e2-yV-PPd" id="6i8-hr-LJe"/>
+                        <outlet property="finger2" destination="NTx-9H-XJi" id="t6B-Wn-ccz"/>
+                        <outlet property="finger3" destination="i7k-7W-3c2" id="mGK-3b-BGu"/>
+                        <outlet property="finger4" destination="RXF-RF-G4h" id="iV3-v3-prF"/>
+                        <outlet property="playButton" destination="d1Q-1N-ebe" id="uum-5A-TaP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="12" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1009" y="-746"/>
+        </scene>
+        <!--Chord View Controller - Chord-->
+        <scene sceneID="FMG-zO-HMe">
+            <objects>
+                <viewController id="XkW-GJ-1YP" customClass="ChordViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="neh-90-bSk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Guitar Chord" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Rag-Jo-ysy">
+                                <rect key="frame" x="102" y="14" width="117" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" id="9sI-HO-KHh">
+                                <rect key="frame" x="0.0" y="436" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="omd-MY-EyG"/>
+                                    <barButtonItem title="Help" id="mfs-zS-tyD">
+                                        <connections>
+                                            <segue destination="WZj-po-VJX" kind="modal" modalTransitionStyle="crossDissolve" id="6tw-TH-E7U"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="I-IV-V" id="l35-AW-vHh">
+                                        <connections>
+                                            <segue destination="2" kind="modal" modalTransitionStyle="crossDissolve" id="82g-Cr-7Y2"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Major" id="8E4-hA-Lqa">
+                                        <connections>
+                                            <segue destination="ux8-11-mor" kind="modal" modalTransitionStyle="crossDissolve" id="3i0-Ji-hvL"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Info" id="lLZ-6g-qtP">
+                                        <connections>
+                                            <segue destination="JN5-eq-nlk" kind="modal" modalTransitionStyle="crossDissolve" id="T0x-zk-b0Z"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="GaT-y2-B2D"/>
+                                </items>
+                            </toolbar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fnn-Cm-ZJp">
+                                <rect key="frame" x="88" y="87" width="145" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="Test Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startSound:" destination="XkW-GJ-1YP" eventType="touchDown" id="nih-du-QVr"/>
+                                    <action selector="stopSound:" destination="XkW-GJ-1YP" eventType="touchUpInside" id="RkR-UQ-Qsd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Chord" image="first.png" id="ij8-TX-SRs"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fCs-3X-R0D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3" y="-764"/>
+        </scene>
+        <!--Help Chord View Controller-->
+        <scene sceneID="q5U-UJ-KcT">
+            <objects>
+                <viewController id="WZj-po-VJX" customClass="HelpChordViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PW4-Rl-Izf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Guitar Chord Help" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="oZc-Ub-Moy">
+                                <rect key="frame" x="69" y="20" width="182" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" id="8SO-lB-RkG">
+                                <rect key="frame" x="0.0" y="441" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="npi-2w-mrk"/>
+                                    <barButtonItem title="Chord" id="C3v-0m-puX">
+                                        <connections>
+                                            <segue destination="XkW-GJ-1YP" kind="modal" modalTransitionStyle="crossDissolve" id="Fe2-6F-03d"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="eDR-ud-5s4"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="oki-RX-HH3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AIs-tI-pjt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="754" y="-777"/>
+        </scene>
+        <!--Help145 View Controller-->
+        <scene sceneID="xWy-3Q-3Wg">
+            <objects>
+                <viewController id="FkH-3G-yUP" customClass="Help145ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="usP-zT-FGU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Guitar I-IV-V Help" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="kXE-Ts-GOd">
+                                <rect key="frame" x="69" y="20" width="182" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" id="19j-7W-a3z">
+                                <rect key="frame" x="0.0" y="436" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="CNx-uc-FjU"/>
+                                    <barButtonItem title="I-IV-V" id="dey-5J-DMQ">
+                                        <connections>
+                                            <segue destination="2" kind="modal" modalTransitionStyle="crossDissolve" id="RYX-uZ-KxU"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Y8s-oC-vV2"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c2E-Z9-j0C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="759" y="-143"/>
+        </scene>
+        <!--Help Major View Controller-->
+        <scene sceneID="9bj-r2-2uB">
+            <objects>
+                <viewController id="aRd-jn-yzK" customClass="HelpMajorViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mWa-tt-xtu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Guitar Major Chord Help" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="Q51-xr-Dja">
+                                <rect key="frame" x="40" y="20" width="241" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" id="RsK-lj-Dd6">
+                                <rect key="frame" x="0.0" y="436" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="YFl-BH-m5v"/>
+                                    <barButtonItem title="Major" id="AVl-ei-puj">
+                                        <connections>
+                                            <segue destination="ux8-11-mor" kind="modal" modalTransitionStyle="crossDissolve" id="xxu-pw-wzu"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="cZE-cl-IvB"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HfV-tl-unB"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vu0-tN-QkF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="747" y="481"/>
+        </scene>
+        <!--Splash View Controller-->
+        <scene sceneID="kET-yB-6Cj">
+            <objects>
+                <viewController id="g5w-w5-nPc" customClass="SplashViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KBh-nW-Ceo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="www.musicwormhole.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="duM-jg-HDF">
+                                <rect key="frame" x="40" y="197" width="240" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Icon.png" id="YDe-d0-1zC">
+                                <rect key="frame" x="78" y="48" width="164" height="141"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" id="UTJ-Ae-EuX">
+                                <rect key="frame" x="0.0" y="436" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Tutor" id="w2G-DB-ZB4">
+                                        <connections>
+                                            <segue destination="3" kind="modal" id="Zz4-s8-Pf2"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="vRG-f0-aXS"/>
+                                    <barButtonItem title="Chord" id="Ccx-eF-Etb">
+                                        <connections>
+                                            <segue destination="XkW-GJ-1YP" kind="modal" modalTransitionStyle="crossDissolve" id="Ygd-Hw-XW0"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="I-IV-V" id="H6d-Da-D4u">
+                                        <connections>
+                                            <segue destination="2" kind="modal" modalTransitionStyle="crossDissolve" id="O7X-Wz-hRq"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Major" id="f3F-Bp-dsz">
+                                        <connections>
+                                            <segue destination="ux8-11-mor" kind="modal" modalTransitionStyle="crossDissolve" id="5jp-3W-1kf"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Info" id="cNH-QY-UeW">
+                                        <connections>
+                                            <segue destination="JN5-eq-nlk" kind="modal" modalTransitionStyle="crossDissolve" id="85N-EH-KIz"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="RVo-af-fTp"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wJk-D4-d33" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-661" y="-154"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Icon.png" width="57" height="57"/>
+        <image name="first.png" width="30" height="30"/>
+        <image name="guitarNeck.png" width="275" height="545"/>
+        <image name="guts145.png" width="1153" height="1153"/>
+        <image name="gutsMajor.png" width="192" height="192"/>
+        <image name="mask-old.png" width="480" height="320"/>
+        <image name="neck_icon.png" width="30" height="26"/>
+        <image name="newmask.png" width="231" height="154"/>
+        <image name="second.png" width="30" height="30"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="Jkt-Ax-5cQ"/>
+        <segue reference="rlo-oN-ahF"/>
+        <segue reference="pcd-HK-dSg"/>
+        <segue reference="Fe2-6F-03d"/>
+        <segue reference="5jp-3W-1kf"/>
+    </inferredMetricsTieBreakers>
+</document>
