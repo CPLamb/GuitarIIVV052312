@@ -72,7 +72,6 @@
 - (IBAction)resetAction:(UIButton *)sender;
 - (IBAction)playChordsButton:(UIButton *)sender;
 - (IBAction)scaleFingers:(UIButton *)sender;
-- (IBAction)tutorSwitcher:(UISwitch *)sender;
 
 - (IBAction)finger1Pressed:(UIButton *)sender;
 - (IBAction)finger2Pressed:(UIButton *)sender;

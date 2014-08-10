@@ -269,7 +269,7 @@
      }]; 
 
 }
-
+/*
 - (IBAction)tutorSwitcher:(UISwitch *)sender {
     NSLog(@"Switching tutor play mode");
     
@@ -282,7 +282,7 @@
         NSLog(@"Tutor is Switched %d", tutorSwitch);
     }
 }
-
+*/
 - (void)resetChordPlayed {      //resets the chord being played each time a new chord is pressed
     playingC = NO;
     playingG = NO;
